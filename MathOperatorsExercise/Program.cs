@@ -21,13 +21,19 @@ namespace MathOperatorsExercise
             int answer = Add(num1, num2);
             Console.WriteLine($"The sum is = {answer}");
 
+            Console.WriteLine("Subtraction:");
             Console.WriteLine($"{num1} - {num2} = {Subtract(num1, num2)}");
+            Console.WriteLine("Press any key.");
             Console.ReadLine();
 
+            Console.WriteLine("Multiplication:");
             Console.WriteLine($"{num1} * {num2} = {Multiply(num1, num2)}");
+            Console.WriteLine("Press any key.");
             Console.ReadLine();
 
+            Console.WriteLine("Division:");
             Console.WriteLine($"{num1} / {num2} = {Divide(num1, num2)}");
+            Console.WriteLine("Press any key.");
             Console.ReadLine();
         }
 
@@ -59,9 +65,9 @@ namespace MathOperatorsExercise
             return answer;
         }
 
-        public static int Divide(int firstNumber, int secondNumber)
+        public static double Divide(double firstNumber, double secondNumber)
         {
-            int answer = firstNumber / secondNumber;
+            double answer = firstNumber / secondNumber;
             return answer;
         }
     }
